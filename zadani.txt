@@ -1,0 +1,27 @@
+# YellowBoi (téma pacman)
+Autor: Šimon Matouš
+
+## téma z Progtestu
+
+Implementujte klasickou hru Pacman proti počítači (můžete naimplementovat i jiné varianty).
+
+Hra musí splňovat následující funkcionality:
+
+1. Dodržování základních pravidel, sbírání bonusů, míncí (teček), třešniček, teleporty, atp.
+2. Je implementováno několik druhů AI duchů (fungující i zároveň - např. duchové se liší barvou, znakem).
+3. Lze načítat mapy ze souboru (bludiště + pozice bonusů a duchů).
+4. Konfigurovatelná obtížnost hry ze souboru (rychlost duchů, délka trvání jednotlivých módů hry, pravděpodobnost přidání nového bonusu do mapy, ...)
+5. Škálovatelná obtížnost duchů (více strategií duchů dle obtížnost, dle různého chování)
+
+Kde lze využít polymorfismus? (doporučené)
+
+- Rozdělení hráčů: hráč, duch (různé druhy umělé inteligence)
+- Mód hry: klasický (duchové chodí dle svých strategií), zběsilý (duchové pronásledují hráče), nezranitelný (duchové jsou pomalejší, dají se zabít)
+- Herní políčko: zem, stěna, bod, bonus (změna módu), třešnička (více bodů), teleport
+- Uživatelské rozhraní: konzole, ncurses, SDL, OpenGL (různé varianty), ...
+
+Další informace
+
+- https://cs.wikipedia.org/wiki/Pac-Man
+- http://programujte.com/clanek/2011010500-chovani-duchu-ve-hre-pac-man-cast-1/
+- http://programujte.com/clanek/2011010500-chovani-duchu-ve-hre-pac-man-cast-2/
